@@ -1,0 +1,233 @@
+/* ============= GLOBAL WRAPPER ============= */
+
+.longform-section {
+  margin-top: 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* ============= LONGFORM (16:9) ============= */
+
+.longform-block {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.longform-header h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #e5e7eb;
+}
+
+.longform-header p {
+  margin-top: 4px;
+  font-size: 0.94rem;
+  color: #9ca3af;
+  max-width: 720px;
+}
+
+/* 3 x 2 grid on desktop */
+.longform-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+/* Card container */
+.longform-card {
+  background: radial-gradient(circle at top left, #020617, #020617);
+  border-radius: 22px;
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  box-shadow: 0 22px 55px rgba(0, 0, 0, 0.9);
+  padding: 10px 10px 12px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  transition:
+    transform 0.22s ease,
+    box-shadow 0.22s ease,
+    border-color 0.22s ease,
+    background 0.22s ease;
+}
+
+.longform-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 28px 80px rgba(0, 0, 0, 0.95);
+  border-color: rgba(129, 140, 248, 0.9);
+}
+
+/* Video: keep strict 16:9 */
+.longform-video-wrapper {
+  position: relative;
+  width: 100%;
+  border-radius: 18px;
+  overflow: hidden;
+  background: #000;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.85);
+}
+
+/* Modern way */
+.longform-video {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+}
+
+/* Meta text under video */
+.longform-meta {
+  padding: 9px 4px 4px;
+}
+
+.longform-meta h4 {
+  margin: 0 0 2px;
+  font-size: 0.98rem;
+  font-weight: 600;
+  color: #e5e7eb;
+}
+
+.longform-meta span {
+  font-size: 0.84rem;
+  color: #9ca3af;
+}
+
+/* ============= 1:1 SOCIAL EDITS ============= */
+
+.square-block {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.square-header h3 {
+  font-size: 1.0rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #e5e7eb;
+}
+
+.square-header p {
+  margin-top: 4px;
+  font-size: 0.9rem;
+  color: #9ca3af;
+  max-width: 720px;
+}
+
+/* Match style but keep 1:1 aspect */
+.square-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.square-card {
+  background: radial-gradient(circle at top left, #020617, #020617);
+  border-radius: 20px;
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.9);
+  padding: 10px 10px 12px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  transition:
+    transform 0.22s ease,
+    box-shadow 0.22s ease,
+    border-color 0.22s ease;
+}
+
+.square-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 26px 70px rgba(0, 0, 0, 0.95);
+  border-color: rgba(129, 140, 248, 0.9);
+}
+
+/* 1:1 video */
+.square-video-wrapper {
+  border-radius: 16px;
+  overflow: hidden;
+  background: #000;
+  box-shadow: 0 10px 32px rgba(0, 0, 0, 0.8);
+}
+
+.square-video {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+}
+
+.square-meta {
+  padding: 8px 4px 2px;
+}
+
+.square-meta h4 {
+  margin: 0 0 2px;
+  font-size: 0.92rem;
+  color: #e5e7eb;
+}
+
+.square-meta span {
+  font-size: 0.8rem;
+  color: #9ca3af;
+}
+
+/* ============= RESPONSIVE BREAKPOINTS ============= */
+
+@media (max-width: 1200px) {
+  .longform-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .square-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 900px) {
+  .longform-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  .square-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+}
+
+@media (max-width: 640px) {
+  .longform-section {
+    margin-top: 48px;
+    gap: 32px;
+  }
+
+  .longform-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .square-grid {
+    grid-template-columns: 1fr 1fr; /* still 2-up squares on small phones */
+  }
+
+  .longform-card,
+  .square-card {
+    border-radius: 18px;
+  }
+
+  .longform-meta h4,
+  .square-meta h4 {
+    font-size: 0.9rem;
+  }
+
+  .longform-meta span,
+  .square-meta span {
+    font-size: 0.78rem;
+  }
+}

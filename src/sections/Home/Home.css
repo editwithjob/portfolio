@@ -1,0 +1,72 @@
+/* src/sections/Home/Home.css */
+
+.home-section {
+  display: flex;
+  align-items: center;
+}
+
+.home-inner {
+  /* remove card-like structure and just keep spacing */
+  width: 100%;
+  padding: 64px 40px 72px; 
+  position: relative;
+}
+
+/* Wider left block */
+.home-left-full {
+  width: 100%;
+  max-width: 1100px; /* expand text width */
+}
+
+.home-title {
+  font-size: clamp(2.4rem, 4vw, 3.4rem);
+  line-height: 1.05;
+  margin-bottom: 16px;
+  max-width: 1000px;
+}
+
+.home-subtitle {
+  max-width: 760px;
+  margin-bottom: 22px;
+  font-size: 1rem;
+  color: var(--text-muted);
+}
+
+/* Typewriter stays the same */
+.home-typewriter {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 24px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.85);
+  border: 1px solid rgba(148, 163, 184, 0.4);
+}
+
+/* CTA */
+.home-cta {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+  .home-inner {
+    padding: 32px 20px 40px;
+  }
+
+  .home-title {
+    font-size: clamp(2rem, 7vw, 2.8rem);
+  }
+
+  .home-subtitle {
+    max-width: 100%;
+  }
+
+  .home-cta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

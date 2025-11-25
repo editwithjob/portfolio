@@ -1,0 +1,99 @@
+/* src/components/Background/AnimatedBackground.css */
+
+.bg-layer {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.bg-gradient {
+  position: absolute;
+  inset: -20%;
+  background: radial-gradient(circle at top, #1f2937 0, #020617 50%, #000 100%);
+}
+
+.bg-orb {
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  border-radius: 999px;
+  filter: blur(60px);
+  opacity: 0.55;
+}
+
+.orb-purple {
+  background: radial-gradient(circle, rgba(129, 140, 248, 0.8), transparent 60%);
+  top: 5%;
+  left: 10%;
+  animation: orbFloat1 22s ease-in-out infinite alternate;
+}
+
+.orb-cyan {
+  background: radial-gradient(circle, rgba(34, 211, 238, 0.9), transparent 60%);
+  bottom: -10%;
+  right: -5%;
+  animation: orbFloat2 28s ease-in-out infinite alternate;
+}
+
+@keyframes orbFloat1 {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(40px, 80px, 0);
+  }
+}
+
+@keyframes orbFloat2 {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-60px, -60px, 0);
+  }
+}
+
+.bg-noise-overlay {
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 160 160' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.2' numOctaves='3' stitchTiles='noStitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.28'/%3E%3C/svg%3E");
+  mix-blend-mode: soft-light;
+  opacity: 0.35;
+}
+
+.bg-particles {
+  position: absolute;
+  inset: 0;
+}
+
+.bg-particle {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  border-radius: 999px;
+  background: rgba(148, 163, 184, 0.7);
+  top: calc(100% * var(--rand-y, 0.5));
+  left: calc(100% * var(--rand-x, 0.5));
+  opacity: 0.3;
+  animation: particleFloat 10s linear infinite;
+}
+
+.bg-particle:nth-child(odd) {
+  animation-duration: 13s;
+}
+
+.bg-particle:nth-child(3n) {
+  animation-duration: 17s;
+  opacity: 0.6;
+}
+
+@keyframes particleFloat {
+  from {
+    transform: translate3d(0, 10px, 0);
+  }
+  to {
+    transform: translate3d(0, -40px, 0);
+  }
+}

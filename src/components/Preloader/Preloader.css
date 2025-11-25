@@ -1,0 +1,81 @@
+/* src/components/Preloader/Preloader.css */
+
+.preloader {
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(circle at 10% 0, #1f2937 0, #020617 55%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+}
+
+.preloader-inner {
+  text-align: center;
+}
+
+.preloader-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 18px;
+  border-radius: 999px;
+  border: 1px solid rgba(148, 163, 184, 0.6);
+  background: radial-gradient(circle at top left, rgba(148, 163, 184, 0.25), transparent 60%),
+    rgba(15, 23, 42, 0.9);
+  backdrop-filter: blur(16px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.9);
+}
+
+.preloader-logo-mark {
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  border: 1px solid rgba(249, 250, 251, 0.7);
+  background: radial-gradient(circle at 30% 0, #a855f7, #3b82f6 45%, #020617 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 26px rgba(129, 140, 248, 0.9);
+}
+
+.preloader-logo-mark span {
+  font-weight: 700;
+  font-size: 1.3rem;
+  letter-spacing: 0.08em;
+  color: #f9fafb;
+}
+
+.preloader-logo-text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.preloader-logo-text span:first-child {
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.preloader-logo-text span:last-child {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.preloader-bar {
+  margin: 18px auto 8px;
+  width: 180px;
+  height: 3px;
+  border-radius: 999px;
+  background: linear-gradient(
+    90deg,
+    var(--accent-purple),
+    var(--accent-cyan),
+    var(--accent-orange)
+  );
+}
+
+.preloader-caption {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
