@@ -1,0 +1,15 @@
+.viber-btn:hover {
+  background: rgba(111, 74, 155, 0.22);
+  border-color: rgba(200, 160, 255, 0.6);
+}
+
+.viber-icon {
+  font-size: 30px;
+  color: #7c54c6;
+  transition: 0.25s ease;
+}
+
+.viber-btn:hover .viber-icon {
+  color: #ffffff;
+  transform: scale(1.08);
+}

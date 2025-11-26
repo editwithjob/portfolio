@@ -2,7 +2,8 @@
 import { motion } from "framer-motion";
 import "./Contact.css";
 import WhatsAppButton from "../../components/WhatsApp/WhatsAppButton.jsx";
-
+import TelegramButton from "../../components/Telegram/TelegramButton.jsx";
+import ViberButton from "../../components/Viber/ViberButton.jsx";
 
 function Contact() {
   return (
@@ -30,9 +31,6 @@ function Contact() {
                 <span>✉</span>
               </button>
             </a>
-            <button className="btn-ghost">
-              Or share a link to your raw footage
-            </button>
           </div>
 
           <div className="contact-details">
@@ -43,11 +41,6 @@ function Contact() {
               Available for: <span>Remote · PH-based · International clients</span>
             </p>
           </div>
-           {/* WhatsApp Button inside Contact */}
-    <div className="contact-whatsapp-wrapper">
-      <WhatsAppButton />
-      <span className="wa-label">Chat with me on WhatsApp</span>
-    </div>
         </motion.div>
 
         <motion.div
@@ -79,11 +72,17 @@ function Contact() {
       Reach out via email or share a link to your raw footage — whichever works
       best for your workflow.
     </p>
+    {/* NEW MINI TITLE */}
+  <p className="cft-message-title">Message me on these platforms:</p>
 
-    <p className="cft-reassurance">
-      No pressure — I’ll simply review your project and let you know how we can
-      elevate your edit.
-    </p>
+
+  {/* ROW OF BUTTONS */}
+  <div className="contact-platform-row">
+    <WhatsAppButton />
+    <TelegramButton />
+    <ViberButton />
+   </div>
+ 
   </div>
 </motion.div>
       </div>

@@ -1,0 +1,28 @@
+/* Shared glass button base for all platforms */
+.platform-btn {
+  width: 58px;
+  height: 58px;
+  border-radius: 18px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  line-height: 0;
+
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  backdrop-filter: blur(14px) saturate(140%);
+  -webkit-backdrop-filter: blur(14px) saturate(140%);
+
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.45),
+    inset 0 1px 3px rgba(255, 255, 255, 0.25);
+
+  cursor: pointer;
+  transition: all 0.28s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.platform-btn:hover {
+  transform: translateY(-4px) scale(1.06);
+}

@@ -1,0 +1,19 @@
+.whatsapp-btn {
+  /* extra subtle green tint on hover handled below */
+}
+
+.whatsapp-btn:hover {
+  background: rgba(37, 211, 102, 0.22);
+  border-color: rgba(255, 255, 255, 0.45);
+}
+
+.wa-icon {
+  font-size: 30px;
+  color: #25d366;
+  transition: 0.25s ease;
+}
+
+.whatsapp-btn:hover .wa-icon {
+  color: #ffffff;
+  transform: scale(1.08);
+}

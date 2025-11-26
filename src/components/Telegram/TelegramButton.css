@@ -1,0 +1,15 @@
+.telegram-btn:hover {
+  background: rgba(0, 136, 204, 0.22);
+  border-color: rgba(163, 211, 255, 0.6);
+}
+
+.tg-icon {
+  font-size: 30px;
+  color: #0088cc;
+  transition: 0.25s ease;
+}
+
+.telegram-btn:hover .tg-icon {
+  color: #ffffff;
+  transform: scale(1.08);
+}
