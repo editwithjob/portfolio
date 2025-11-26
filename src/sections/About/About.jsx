@@ -7,22 +7,22 @@ const tools = [
   {
     name: "Adobe Premiere Pro",
     tag: "Primary NLE",
-    logo: "/images/tools/premiere.png",
+    logo: "images/tools/premiere.png",
   },
   {
     name: "DaVinci Resolve",
     tag: "Color & finishing",
-    logo: "/images/tools/davinci.png",
+    logo: "images/tools/davinci.png",
   },
   {
     name: "CapCut",
     tag: "Fast UGC workflows",
-    logo: "/images/tools/capcut.png",
+    logo: "images/tools/capcut.png",
   },
   {
     name: "Filmora",
     tag: "Light edits",
-    logo: "/images/tools/filmora.png",
+    logo: "images/tools/filmora.png",
   },
 ];
 

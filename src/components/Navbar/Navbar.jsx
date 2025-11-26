@@ -73,7 +73,8 @@ function Navbar({ isVideoModalOpen = false }) {
         {/* Brand / avatar */}
         <div className="navbar-left">
           <div className="navbar-avatar">
-  <img src="/images/logo.png" alt="Logo" />
+  <img src="images/logo.png" alt="Logo" className="your-logo-class" />
+
 </div>
 
           <div className="navbar-title-block">

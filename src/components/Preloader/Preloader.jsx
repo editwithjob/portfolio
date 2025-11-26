@@ -23,7 +23,7 @@ function Preloader() {
           transition={{ duration: 0.9, ease: "easeOut" }}
         >
 <div className="navbar-avatar">
-  <img src="/images/logo.png" alt="Logo" />
+  <img src="images/logo.png" alt="Logo" />
 </div>
           <div className="preloader-logo-text">
             <span>Portfolio</span>

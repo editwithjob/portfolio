@@ -1,6 +1,8 @@
 // src/sections/Contact/Contact.jsx
 import { motion } from "framer-motion";
 import "./Contact.css";
+import WhatsAppButton from "../../components/WhatsApp/WhatsAppButton.jsx";
+
 
 function Contact() {
   return (
@@ -41,6 +43,11 @@ function Contact() {
               Available for: <span>Remote · PH-based · International clients</span>
             </p>
           </div>
+           {/* WhatsApp Button inside Contact */}
+    <div className="contact-whatsapp-wrapper">
+      <WhatsAppButton />
+      <span className="wa-label">Chat with me on WhatsApp</span>
+    </div>
         </motion.div>
 
         <motion.div

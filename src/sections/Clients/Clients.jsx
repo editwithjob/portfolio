@@ -8,7 +8,7 @@ const testimonials = [
     name: "Erick Sanchez",
     role: "Content Creator",
     social: "497.8K+ followers on TikTok",
-    avatar: "/images/clients/erick.jpg",
+    avatar: "images/clients/erick.jpg",
     quote:
       "Job really understands how to hook viewers in the first few seconds. He builds a clear story arc and knows how to make both long-form videos and reels feel emotional and engaging from start to finish.",
     tags: ["Short-form hooks", "Emotional storytelling"],
@@ -17,7 +17,7 @@ const testimonials = [
     name: "Pedro Estrella",
     role: "CEO, Solar Bill Buster (2020–2023)",
     social: "19.9K+ followers on Instagram",
-    avatar: "/images/clients/pedro.jpg",
+    avatar: "images/clients/pedro.jpg",
     quote:
       "Job's edits consistently find and highlight the strongest hooks in my content. The videos he creates don’t just look good—they’ve had a noticeable impact on our sales and how our offers are perceived.",
     tags: ["Offer clarity", "Sales-focused edits"],
@@ -26,7 +26,7 @@ const testimonials = [
     name: "Coby Persin",
     role: "Creator & Entrepreneur",
     social: "1.4M followers on Instagram · 530.6K on TikTok",
-    avatar: "/images/clients/coby.jpg",
+    avatar: "images/clients/coby.jpg",
     quote:
       "Job is incredibly creative and fast. He understands direction quickly, needs very few revisions, and still delivers edits that make a huge impact with minimal back and forth.",
     tags: ["Fast turnaround", "Minimal revisions"],
